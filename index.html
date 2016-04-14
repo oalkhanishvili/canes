@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cannes Lions</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/fakeLoader/fakeLoader.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div id="fakeLoader"></div>
+
+<div class="mobile-menu">
+    <a href="#about">ჩვენ შესახებ</a>
+    <a href="#news">საიხლეები</a>
+    <a href="#">YOUNG LIONS</a>
+    <a href="#jury">ჟიური</a>
+    <a href="#contact">კონტაქტი</a>
+
+</div>
+<div class="header">
+    <div class="container">
+        <img src="img/logo.png" class="logo">
+        <a href="#" @click="changeLang()">{{ lang }}</a>
+        <div class="header-item">{{ dataLang.about }}</div>
+        <div class="header-item">{{ dataLang.news }}</div>
+        <div class="header-item">YOUNG LIONS</div>
+        <div class="header-item">{{ dataLang.judges }}</div>
+        <div class="header-item">{{ dataLang.contact }}</div>
+        <a id="a" href="#"><span></span></a>
+    </div>
+
+
+</div>
+
+<section id="main" class="main-page">
+    <div class="slider-back"></div>
+    <div class="slider-container">
+        <img class="big-logo" src="img/big-logo.png">
+        <div class="first" style="background: url(img/janiashili.png); background-size:cover;"></div>
+        <div class="second" style="background: url(img/janiashili.png); background-size: cover;"></div>
+        <div class="third" style="background: url(img/janiashili.png); background-size:cover;"></div>
+        <div class="slider-select">
+            <div id="first" class="active"><div class="border"></div> <div class="date"><font>08</font><br>აპრილი</div> <div class="description-event">ახალგაზრდების ლომების კონკურსზე რეგისტრაცია მიღება დასრულებულია. განაცხადები აღარ მიიღება</div></div>
+            <div id="second" class=""><div class="border"></div> <div class="date"><font>08</font><br>აპრილი</div> <div class="description-event">ახალგაზრდების ლომების კონკურსზე რეგისტრაცია მიღება დასრულებულია. განაცხადები აღარ მიიღება</div></div>
+            <div id="third" class=""><div class="border"></div> <div class="date"><font>08</font><br>აპრილი</div> <div class="description-event">ახალგაზრდების ლომების კონკურსზე რეგისტრაცია მიღება დასრულებულია. განაცხადები აღარ მიიღება</div></div>
+        </div>
+    </div>
+    <div class="categories">
+        <div  ><img src="img/cyber.png"> <p>CYBER</p></div>
+        <div ><img src="img/design.png"><p> DESIGN</p></div>
+        <div><img src="img/print.png"><p> PRINT</p></div>
+        <div ><img src="img/marketers.png"> <p> MARKETERS</p></div>
+    </div>
+</section>
+<section id="about" class="about-us">
+    <div class="container">
+        <div class="row title">
+            <p>{{ dataLang.about }}</p>
+        </div>
+        <div class="row description">
+            Lorem Ipsum საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა. მისი ტექსტი არამარტო 5 საუკუნის მანძილზე შემორჩა, არამედ მან დღემდე, ელექტრონული ტიპოგრაფიის დრომდეც უცვლელად მოაღწია. განსაკუთრებული პოპულარობა მას 1960-იან წლებში გამოსულმა Letraset-ის ცნობილმა ტრაფარეტებმა მოუტანა, უფრო მოგვიანებით კი — Aldus PageMaker-ის ტიპის საგამომცემლო პროგრამებმა, რომლებშიც Lorem Ipsum-ის სხვადასხვა ვერსიები იყო ჩაშენებული.
+        </div>
+        <div class="row photos">
+            <div class="col-md-2"></div>
+            <div class="col-md-4 col-xs-6 person">
+                <img class="about-img img-rounded" src="img/leps.png"><br>
+                ლევან ლეფსვერიძე
+            </div>
+            <div class="col-md-4 col-xs-6 person">
+                <img class="about-img img-rounded" src="img/ako.png"><br>
+                აკაკი ახალაია
+            </div>
+        </div>
+    </div>
+</section>
+<section id="news" class="news">
+    <div class="container">
+        <div class="title">
+            <p>სიახლეები</p>
+        </div>
+        <div class="row article">
+            <div class="col-md-1"></div>
+            <div class="col-md-3 col-sm-3">
+                <img src="img/lepsvera.png">
+            </div>
+            <div class="col-md-6 col-sm-7">
+                <strong>Title</strong>
+                <br>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specl</p>
+            </div>
+            <div class="col-md-2 col-sm-2"> <p>08</p><p>აპრილი</p></div>
+        </div>
+        <div class="row article">
+            <div class="col-md-1"></div>
+            <div class="col-md-3 col-sm-3">
+                <img src="img/lepsvera.png">
+            </div>
+            <div class="col-md-6 col-sm-7">
+                <strong>Title</strong>
+                <br>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a ty</p>
+            </div>
+            <div class="col-md-2 col-sm-2"> <p>08</p><p>აპრილი</p></div>
+        </div>
+        <div class="row article">
+            <div class="col-md-1"></div>
+            <div class="col-md-3 col-sm-3">
+                <img src="img/lepsvera.png">
+            </div>
+            <div class="col-md-6 col-sm-7">
+                <strong>Title</strong>
+                <br>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gal</p>
+            </div>
+            <div class="col-md-2 col-sm-2"> <p>08</p><p>აპრილი</p></div>
+        </div>
+        <div class="more">მეტი</div>
+    </div>
+</section>
+<section id="jury" class="jury">
+
+    <div class="container">
+        <div class="col-md-3 category-nav">
+            <div id="cyber" class="category active">
+                <img src="img/cyber-yellow.png"><img src="img/cyber.png"> <p>CYBER</p>
+            </div>
+            <div id="design" class="category">
+                <img src="img/design-yellow.png"><img src="img/design.png"><p> DESIGN</p>
+            </div>
+            <div  id="printers" class="category">
+                <img src="img/print-yellow.png"><img src="img/print.png"><p> PRINT</p>
+            </div>
+            <div id="marketers" class="category">
+                <img src="img/marketers-yellow.png"> <img src="img/marketers.png"><p> MARKETERS</p>
+            </div>
+        </div>
+        <div class="col-md-9 jury-contigent" >
+            <p>ჟიურის შემადგენლობა პრინტში</p>
+            <div class="row cyber">
+                <div class="col-md-3 col-sm-6">
+                    <img src="img/leps.png" class="img-rounded">
+                    <p>ლევან ლეფსვერიძე</p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img src="img/leps.png" class="img-rounded">
+                    <p>ლევან ლეფსვერიძე</p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img src="img/leps.png" class="img-rounded">
+                    <p>ლევან ლეფსვერიძე</p>
+                </div>
+                <div  class="col-md-3 col-sm-6">
+                    <img src="img/leps.png" class="img-rounded">
+                    <p>ლევან ლეფსვერიძე</p>
+                </div>
+            </div>
+            <div class="row design" style="display: none;">
+                <div class="col-md-3 col-sm-6">
+                    <img src="img/ako.png" class="img-rounded">
+                    <p>ლევან ლეფსვერიძე</p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img src="img/leps.png" class="img-rounded">
+                    <p>ლევან ლეფსვერიძე</p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img src="img/ako.png" class="img-rounded">
+                    <p>ლევან ლეფსვერიძე</p>
+                </div>
+                <div  class="col-md-3 col-sm-6">
+                    <img src="img/leps.png" class="img-rounded">
+                    <p>ლევან ლეფსვერიძე</p>
+                </div>
+            </div>
+            <div class="row printers" style="display: none;">
+                <div class="col-md-3 col-sm-6">
+                    <img src="img/leps.png" class="img-rounded">
+                    <p>ლევან ლეფსვერიძე</p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img src="img/ako.png" class="img-rounded">
+                    <p>ლევან ლეფსვერიძე</p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img src="img/leps.png" class="img-rounded">
+                    <p>ლევან ლეფსვერიძე</p>
+                </div>
+                <div  class="col-md-3 col-sm-6">
+                    <img src="img/ako.png" class="img-rounded">
+                    <p>ლევან ლეფსვერიძე</p>
+                </div>
+            </div>
+            <div class="row marketers" style="display: none;">
+                <div class="col-md-3 col-sm-6">
+                    <img src="img/ako.png" class="img-rounded">
+                    <p>ლევან ლეფსვერიძე</p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img src="img/ako.png" class="img-rounded">
+                    <p>ლევან ლეფსვერიძე</p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img src="img/ako.png" class="img-rounded">
+                    <p>ლევან ლეფსვერიძე</p>
+                </div>
+                <div  class="col-md-3 col-sm-6">
+                    <img src="img/ako.png" class="img-rounded">
+                    <p>ლევან ლეფსვერიძე</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="title">
+            <p>კონტაქტი</p>
+        </div>
+        <form>
+            <input placeholder="სახელი">
+            <input placeholder="გვარი">
+            <input placeholder="ელ.ფოსტა">
+            <input placeholder="კომპანია">
+            <textarea placeholder="აღწერა"></textarea>
+            <input type="submit" class="submit" value="გაგზავნა">
+        </form>
+    </div>
+    <div class="footer">
+        <img class="footer-logo" src="img/logo.png">
+    </div>
+</section>
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> -->
+<!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="bower_components/fakeLoader/fakeLoader.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".fakeloader").fakeLoader({
+            timeToHide:1200,
+            bgColor:"#2ecc71",
+            spinner:"spinner1"
+        });
+    });
+</script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.16/vue.js"></script> -->
+<script>
+    var firstSliderClass = 'first';
+    var firstCategory = "cyber";
+    $(document).ready(function () {
+        $('#a').click(function(){
+            $(this).toggleClass('active');
+            if($(".mobile-menu").hasClass("active") || $(".mobile-menu").hasClass("not-active")){
+                $(".mobile-menu").toggleClass('active not-active');
+            } else {
+                $(".mobile-menu").addClass('active');
+            }
+
+            return false;
+        });
+
+
+        $(".slider-select>div").click(function(){
+            var id = $(this).attr('id');
+            $(".slider-select>div").removeClass("active");
+            $("#"+id).addClass("active");
+            if(firstSliderClass != id){
+                $("."+firstSliderClass).animate({opacity: "0"} , 700);
+                $("."+id).animate({opacity: "1"} , 500);
+                firstSliderClass=id;
+            }
+        });
+
+        $(".category").click(function () {
+            var id = $(this).attr('id');
+            if(id == firstCategory) return;
+            $(".category").removeClass("active");
+            $("#"+id).addClass("active");
+            $("."+firstCategory).css({display: "none"} , 500);
+            $("."+id).css({display: "block"} , 500);
+            if(id == "cyber"){
+                $(".jury-contigent>p").html("ჟიურის შემადგენლობა საიბერში");
+            } else if(id=="printers"){
+                $(".jury-contigent>p").html("ჟიურის შემადგენლობა პრინტში");
+            } else if(id=="marketers"){
+                $(".jury-contigent>p").html("ჟიურის შემადგენლობა მარკეტერში");
+            } else {
+                $(".jury-contigent>p").html("ჟიურის შემადგენლობა დიზაინში");
+            }
+            firstCategory = id;
+        });
+    });
+
+</script>
+
+<!-- <script src="js/app.js"></script> -->
+
+</body>
+
+</html>
