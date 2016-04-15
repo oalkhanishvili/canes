@@ -313,15 +313,15 @@
 <section id="contact" class="contact">
     <div class="container">
         <div class="title">
-            <p>კონტაქტი</p>
+            <p v-text="dataLang.contact"></p>
         </div>
         <form>
-            <input placeholder="სახელი">
-            <input placeholder="გვარი">
-            <input placeholder="ელ.ფოსტა">
-            <input placeholder="კომპანია">
-            <textarea placeholder="აღწერა"></textarea>
-            <input type="submit" class="submit" value="გაგზავნა">
+            <input :placeholder="dataLang.lastname">
+            <input :placeholder="dataLang.firstname">
+            <input :placeholder="dataLang.email">
+            <input :placeholder="dataLang.company">
+            <textarea :placeholder="dataLang.description"></textarea>
+            <input type="submit" class="submit" :value="dataLang.send">
         </form>
     </div>
     <div class="footer">
