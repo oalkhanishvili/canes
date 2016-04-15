@@ -49,24 +49,37 @@
 </div>
 
 <section id="main" class="main-page">
-    <div class="slider-back"></div>
-    <div class="slider-container">
-        <img class="big-logo" src="img/big-logo.png">
-        <div class="first" style="background: url(img/janiashili.png); background-size:cover;"></div>
-        <div class="second" style="background: url(img/janiashili.png); background-size: cover;"></div>
-        <div class="third" style="background: url(img/janiashili.png); background-size:cover;"></div>
-        <div class="slider-select">
-            <div id="first" class="active"><div class="border"></div> <div class="date"><font>08</font><br>აპრილი</div> <div class="description-event">ახალგაზრდების ლომების კონკურსზე რეგისტრაცია მიღება დასრულებულია. განაცხადები აღარ მიიღება</div></div>
-            <div id="second" class=""><div class="border"></div> <div class="date"><font>08</font><br>აპრილი</div> <div class="description-event">ახალგაზრდების ლომების კონკურსზე რეგისტრაცია მიღება დასრულებულია. განაცხადები აღარ მიიღება</div></div>
-            <div id="third" class=""><div class="border"></div> <div class="date"><font>08</font><br>აპრილი</div> <div class="description-event">ახალგაზრდების ლომების კონკურსზე რეგისტრაცია მიღება დასრულებულია. განაცხადები აღარ მიიღება</div></div>
+    <slider :slider-content="dataLang.server"></slider>
+    <template id="mySlider">
+        <div class="slider-back"></div>
+        <div class="slider-container">
+            <img class="big-logo" src="img/big-logo.png">
+            <div class="first" style="background: url(img/janiashili.png); background-size:cover;"></div>
+            <div class="second" style="background: url(img/janiashili.png); background-size: cover;"></div>
+            <div class="third" style="background: url(img/janiashili.png); background-size:cover;"></div>
+            <div class="slider-select" >
+                <div id="first" class="active"><div class="border"></div>
+                    <div class="date"><font>{{ sliderContent[0].day }}</font><br>{{ sliderContent[0].month }}</div>
+                    <div class="description-event">{{ sliderContent[0].body }}</div>
+                </div>
+                <div id="second" class=""><div class="border"></div>
+                    <div class="date"><font>{{ sliderContent[1].day }}</font><br>{{ sliderContent[1].month }}</div>
+                    <div class="description-event">{{ sliderContent[1].body }}</div>
+                </div>
+                <div id="third" class=""><div class="border"></div>
+                    <div class="date"><font>{{ sliderContent[2].day }}</font><br>{{ sliderContent[2].month }}</div>
+                    <div class="description-event">{{ sliderContent[2].body }}</div>
+                </div>
+            </div>
+
         </div>
-    </div>
-    <div class="categories">
-        <div  ><img src="img/cyber.png"> <p>CYBER</p></div>
-        <div ><img src="img/design.png"><p> DESIGN</p></div>
-        <div><img src="img/print.png"><p> PRINT</p></div>
-        <div ><img src="img/marketers.png"> <p> MARKETERS</p></div>
-    </div>
+        <div class="categories">
+            <div  ><img src="img/cyber.png"> <p>CYBER</p></div>
+            <div ><img src="img/design.png"><p> DESIGN</p></div>
+            <div><img src="img/print.png"><p> PRINT</p></div>
+            <div ><img src="img/marketers.png"> <p> MARKETERS</p></div>
+        </div>
+    </template>
 </section>
 <section id="about" class="about-us">
     <div class="container">
@@ -94,41 +107,17 @@
         <div class="title">
             <p>{{ dataLang.news }}</p>
         </div>
-        <div class="row article">
+        <div class="row article" v-for="article in dataLang.server">
             <div class="col-md-1"></div>
             <div class="col-md-3 col-sm-3">
-                <img src="img/lepsvera.png">
+                <img :src="article.poster">
             </div>
             <div class="col-md-6 col-sm-7">
-                <strong>Title</strong>
+                <strong>{{ article.title }}</strong>
                 <br>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specl</p>
+                <p>{{ article.body }}</p>
             </div>
-            <div class="col-md-2 col-sm-2"> <p>08</p><p>აპრილი</p></div>
-        </div>
-        <div class="row article">
-            <div class="col-md-1"></div>
-            <div class="col-md-3 col-sm-3">
-                <img src="img/lepsvera.png">
-            </div>
-            <div class="col-md-6 col-sm-7">
-                <strong>Title</strong>
-                <br>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a ty</p>
-            </div>
-            <div class="col-md-2 col-sm-2"> <p>08</p><p>აპრილი</p></div>
-        </div>
-        <div class="row article">
-            <div class="col-md-1"></div>
-            <div class="col-md-3 col-sm-3">
-                <img src="img/lepsvera.png">
-            </div>
-            <div class="col-md-6 col-sm-7">
-                <strong>Title</strong>
-                <br>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gal</p>
-            </div>
-            <div class="col-md-2 col-sm-2"> <p>08</p><p>აპრილი</p></div>
+            <div class="col-md-2 col-sm-2"> <p>{{ article.day }}</p><p>{{ article.month }}</p></div>
         </div>
         <div class="more">მეტი</div>
     </div>
@@ -342,7 +331,7 @@
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.16/vue.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.16/vue.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/0.7.0/vue-resource.js"></script>
 
 <script>
     var firstSliderClass = 'first';
