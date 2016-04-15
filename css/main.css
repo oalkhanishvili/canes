@@ -2,9 +2,35 @@
     display: none;
 }
 
+@font-face {
+    font-family: 'dejavu';
+    src: url('../fonts/bpg_excelsior_dejavu_2010.eot');
+    src: url('../fonts/bpg_excelsior_dejavu_2010.eot?#iefix') format('embedded-opentype'),
+        /*url('../fonts/bpgninomtavrulinormal.woff2') format('woff2'),*/
+    url('../fonts/bpg_excelsior_dejavu_2010.woff') format('woff'),
+    url('../fonts/bpg_excelsior_dejavu_2010.ttf')  format('truetype'),
+    url('../fonts/bpg_excelsior_dejavu_2010.svg#svgFontName') format('svg');
+}
+
+
+
+@font-face {
+    font-family: 'Caps_dejavu';
+    src: url('../fonts/bpg_excelsior_caps_dejavu_2010.eot');
+    src: url('../fonts/bpg_excelsior_caps_dejavu_2010.eot?#iefix') format('embedded-opentype'),
+        /*url('../fonts/bpgninomtavrulinormal.woff2') format('woff2'),*/
+    url('../fonts/bpg_excelsior_caps_dejavu_2010.woff') format('woff'),
+    url('../fonts/bpg_excelsior_caps_dejavu_2010.ttf')  format('truetype'),
+    url('../fonts/bpg_excelsior_caps_dejavu_2010.svg#svgFontName') format('svg');
+}
+
+
+
+
 html, body{
     height:100%;
     margin: 0;
+    font-family: dejavu;
 }
 
 .header{
@@ -45,6 +71,8 @@ html, body{
     line-height: 100px;
     display: inline-block;
     cursor: pointer;
+    font-family: Caps_dejavu;
+    font-size:15px;
 }
 
 .main-page{
@@ -81,6 +109,7 @@ html, body{
     font-size:23px;
     color: white;
     padding-top: 4%;
+    font-family:Caps_dejavu;
 }
 
 
@@ -237,13 +266,20 @@ html, body{
 
 }
 
+
+
+.more{
+    font-family:Caps_dejavu;
+    font-size: 16px;
+}
+
 .title{
     position: relative;
     text-align: center;
     font-size:23px;
     color: white;
     height:100px;
-
+    font-family: Caps_dejavu;
 }
 
 .title p{
@@ -313,6 +349,17 @@ html, body{
     width:100%;
 }
 
+.article>div p:nth-child(1) {
+    color: #46ADE4;
+    font-size: 26px;
+}
+
+.article>div p:nth-child(2) {
+    color: black;
+    font-size: 9px;
+    margin-top: -14px;
+}
+
 .more{
     position: relative;
     left:10%;
@@ -368,6 +415,7 @@ html, body{
          -o-transform: translateY(-75%);
             transform: translateY(-75%);
     display: inline-block;
+    font-family: Caps_dejavu;
 }
 .category-nav .category img  {
     position: absolute;
@@ -431,6 +479,10 @@ html, body{
     width:100%;
 }
 
+.jury-contigent>p{
+    font-family: Caps_dejavu;
+}
+
 .jury-contigent>div>div{
     margin-bottom: 2%;
 }
@@ -451,6 +503,7 @@ html, body{
     color: white;
     display: inline-block;
     margin-left: 21px;
+    font-family: Caps_dejavu;
 }
 
 .contact .title{
@@ -629,7 +682,7 @@ input.submit{
 .slider-select>div .date font {
     color: #46AAEA;
     font-size: 26px;
-    margin-left: 4px;
+    margin-left: 2px;
 }
 
 .slider-select>div .description-event{
@@ -831,7 +884,7 @@ input.submit{
 .news-container .date font {
     color: #46AAEA;
     font-size: 26px;
-    margin-left: 4px;
+    margin-left: 2px;
 }
 
 @media only screen and (max-height: 810px) {
