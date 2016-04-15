@@ -1,5 +1,5 @@
 [v-cloak] {
-  display: none;
+    display: none;
 }
 
 html, body{
@@ -286,10 +286,10 @@ html, body{
 }
 
 .jury{
-    height: 45%;
+    height: auto;
     background: #46AAE0;
     width: 100%;
-    min-height: 320px;
+
 }
 
 .jury .container{
@@ -302,48 +302,52 @@ html, body{
 
 
 .category-nav{
-    height: 100%;
-    border-right: 1px solid rgba(82, 83, 106, 0.18);
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid rgba(82, 83, 106, 0.18);
 }
 
 
 .category-nav .category{
-    height:25%;
-    width: 100%;
-    text-align: left;
+    height:100%;
+    width: 24%;
+    text-align: center;
     color: white;
     min-height:69px;
     cursor: pointer;
     position: relative;
+    display: inline-block;
 }
 
 .category-nav .category p {
     position: relative;
-    top: 50%;
+    top: 56%;
     left: 8%;
     transform: translateY(-75%);
     display: inline-block;
 }
 .category-nav .category img  {
-    position: relative;
+    position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    left:20%;
     display: inline-block;
     opacity:0;
 }
 
 .category-nav .category.active img  {
-    position: relative;
+    position: absolute;
     top: 50%;
+    left:20%;
     transform: translateY(-50%);
     display: inline-block;
     opacity:1;
 }
 
 .category-nav .category img:nth-child(2)  {
-    position: relative;
+    position: absolute;
     top: 50%;
-    left:0px;
+    left:20%;
     transform: translateY(-50%);
     display: inline-block;
     position: absolute;
@@ -351,9 +355,9 @@ html, body{
 }
 
 .category-nav .category.active img:nth-child(2)  {
-    position: relative;
+
     top: 50%;
-    left:0px;
+    left:20%;
     transform: translateY(-50%);
     display: inline-block;
     position: absolute;
@@ -361,27 +365,33 @@ html, body{
 }
 
 .jury-contigent{
-    height:100%;
+    height:auto;
     text-align: center;
     position: relative;
     left:10px;
+    width:100%;
+}
+
+.jury-contigent>div>div{
+    margin-bottom: 2%;
 }
 
 .jury-contigent p{
     color: white;
-    font-size:20px;
-    margin-top: 2%
+    font-size: 20px;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 .jury-contigent img{
-    width: 91%;
-    margin-top: 45%;
+    width: 39%;
 }
 
 .jury-contigent .row p{
-    font-size:15px;
+    font-size: 15px;
     color: white;
-    margin-top: 15%;
+    display: inline-block;
+    margin-left: 21px;
 }
 
 .contact .title{
@@ -707,9 +717,14 @@ input.submit{
     .jury{
         height:auto;
     }
+
+
+
     .category-nav{
         border-right:none;
         border-bottom: 1px solid rgba(82, 83, 106, 0.18);;
+
+
     }
 
     .header{
@@ -765,7 +780,7 @@ input.submit{
     .jury-contigent .row p {
         font-size: 20px;
         color: white;
-        margin-top: 3%;
+        margin-top: 1%;
     }
 
     .jury-contigent {
@@ -780,12 +795,14 @@ input.submit{
     }
 
     .category-nav .category img {
-
-        transform: translateY(24%);
+        left: 10% !important;
+        width: 24px;
     }
 
     .category-nav .category p {
-        transform: translateY(60%);
+        top: 51%;
+
+        font-size: 11px;
     }
 
     .news,  .news .container, .article, .about-us{
@@ -836,6 +853,15 @@ input.submit{
 @media only screen and (max-width : 480px) {
 
 
+    .category-nav .category img {
+        left: 4% !important;
+        width: 17px;
+    }
+
+    .category-nav .category p {
+        top: 49%;
+        font-size: 9px;
+    }
 
     .categories>div {
         transform: scale(0.65);
