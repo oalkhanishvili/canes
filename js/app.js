@@ -27,6 +27,9 @@ var vm = new Vue({
       }
     }
   },
+  ready: function(){
+
+  },
   computed: {
     dataLang: function(){
       return this.data[this.lang];
@@ -37,6 +40,9 @@ var vm = new Vue({
       this.lang == 'en' ? this.lang = 'ge' : this.lang = 'en';
       var lang = this.lang;
       localStorage.setItem("lang", lang);
+
+    },
+    getData: function(){
 
     }
   }
