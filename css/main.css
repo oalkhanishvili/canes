@@ -512,7 +512,9 @@ a {
 
 .jury-contigent>div>div{
     margin-bottom: 2%;
+    position: relative;
 }
+
 
 .jury-contigent p{
     color: white;
@@ -537,12 +539,26 @@ a {
     margin-bottom: 4%;
 }
 
-.jury-contigent .row p{
+.jury-contigent .row p {
     font-size: 15px;
     color: white;
     display: inline-block;
     margin-left: 21px;
     font-family: Caps_dejavu;
+    width: 200px;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(36%);
+       -moz-transform: translateY(36%);
+        -ms-transform: translateY(36%);
+         -o-transform: translateY(36%);
+            transform: translateY(36%);
+}
+
+.success-msg{
+    text-align: center;
+    font-size: 17px;
+    color: #46AFE4;
 }
 
 .contact .title{
@@ -633,6 +649,7 @@ input.submit{
     display: none;
     z-index: 19;
 }
+
 
 .mobile-menu a{
     display: block;
@@ -1032,7 +1049,7 @@ input.submit{
     }
 
     .jury-contigent .row p {
-        font-size: 20px;
+        font-size: 13px;
         color: white;
         margin-top: 1%;
     }
