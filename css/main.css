@@ -903,6 +903,8 @@ input.submit{
     height:100%;
 }
 
+
+
 .news-page .container{
     margin-top: 125px;
 }
@@ -919,7 +921,11 @@ input.submit{
     font-family: Caps_dejavu;
     margin-bottom: -1%;
 }
-
+.news-container .row .col-sm-8 span * {
+    font-size: 14px !important;
+    line-height: 22px !important;
+    font-family: Caps_dejavu;
+}
 
 .news-container .row>.col-sm-8{
     padding-right: 6%;
