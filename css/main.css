@@ -555,14 +555,24 @@ a {
             transform: translateY(36%);
 }
 
-.success-msg{
+.success-msg {
+    display: block;
     text-align: center;
     font-size: 17px;
     color: #46AFE4;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 66px;
 }
 
 .contact .title{
     color: #46AAE0;
+}
+
+.contact{
+    position: relative;
 }
 
 .contact form{
