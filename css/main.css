@@ -82,6 +82,23 @@ html, body{
 }
 
 
+
+a {
+    color: black !important;
+}
+
+.header .container a:nth-child(2) {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    marin: auto;
+    margin: auto;
+    height: 20px;
+    right: 30px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 .slider-back{
     position: relative;
     top:100px;
