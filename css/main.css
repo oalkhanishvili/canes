@@ -56,6 +56,7 @@ html, body{
     top: 25px;
     height: 50%;
     -webkit-filter: brightness(0%);
+            filter: brightness(0%);
 }
 
 .search{
@@ -201,6 +202,7 @@ a {
          -o-transform: translateY(-50%);
             transform: translateY(-50%);
     -webkit-filter: brightness(0%);
+            filter: brightness(0%);
     left:7%;
     opacity:1;
 }
@@ -559,7 +561,7 @@ a {
 }
 
 .success-msg {
-    display: block;
+    display: none;
     text-align: center;
     font-size: 17px;
     color: #46AFE4;
@@ -652,6 +654,7 @@ input.submit{
             transform: translateX(-50%);
     height: 50%;
     -webkit-filter: brightness(0%);
+            filter: brightness(0%);
 }
 
 .mobile-menu{
