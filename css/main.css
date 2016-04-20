@@ -134,6 +134,15 @@ a {
 }
 
 
+.blue-back img{
+    cursor: pointer;
+
+    position: absolute;
+    left: 8%;
+    margin-top: 8px;
+    width: 120px;
+}
+
 .slider-container{
     position: absolute;
     left:0;
@@ -1150,6 +1159,14 @@ input.submit{
 
     .blue-category p{
         font-size:9px;
+    }
+
+    .blue-back img{
+        left: 0;
+        right: 0;
+        margin: auto;
+        position: absolute;
+        top: 58px;
     }
 
 }
