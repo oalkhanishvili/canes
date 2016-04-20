@@ -53,8 +53,8 @@ html, body{
 .logo {
     left: 0;
     position: absolute;
-    top: 25px;
-    height: 50%;
+    top: 20%;
+    height: 60%;
     -webkit-filter: brightness(0%);
             filter: brightness(0%);
 }
@@ -518,6 +518,7 @@ a {
 .jury-contigent>div>div{
     margin-bottom: 2%;
     position: relative;
+    min-height: 150px;
 }
 
 
@@ -545,7 +546,7 @@ a {
 }
 
 .jury-contigent .row p {
-    font-size: 15px;
+    font-size: 13px;
     color: white;
     display: inline-block;
     margin-left: 21px;
@@ -558,6 +559,7 @@ a {
         -ms-transform: translateY(36%);
          -o-transform: translateY(36%);
             transform: translateY(36%);
+
 }
 
 .success-msg {
@@ -1014,7 +1016,7 @@ input.submit{
     }
 
     .logo{
-        top: 7px;
+
         margin-left:20px;
     }
     .header-item {
