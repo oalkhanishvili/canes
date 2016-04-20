@@ -79,6 +79,7 @@ html, body{
     height: 90%;
     width: 100%;
     position: relative;
+    min-height: 600px;
 }
 
 
@@ -1046,6 +1047,10 @@ input.submit{
 }
 
 @media only screen and (max-width : 768px) {
+
+    .main-page{
+        min-height: 400px;
+    }
     .contact input{
         width: 100%;
     }
@@ -1073,6 +1078,10 @@ input.submit{
 
         top:0px;
 
+    }
+
+    .big-logo{
+        height: 35%;
     }
 
     .category-nav .category img {
