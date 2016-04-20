@@ -293,6 +293,7 @@ a {
 .more{
     font-family:Caps_dejavu;
     font-size: 16px;
+    margin-bottom: 10px;
 }
 
 .title{
@@ -370,11 +371,13 @@ a {
 
 .article img{
     width:100%;
+    cursor: pointer;
 }
 
 .article>.col-md-2 p:nth-child(1) {
     color: #46ADE4;
     font-size: 26px;
+
 }
 
 .article>.col-md-2 p:nth-child(2) {
@@ -390,6 +393,7 @@ a {
     font-size: 16px;
     margin-bottom: -10px;
     font-family: Caps_dejavu;
+    cursor: pointer;
 }
 
 .more{
@@ -956,6 +960,7 @@ input.submit{
     font-weight: bold;
     font-family: Caps_dejavu;
     margin-bottom: -1%;
+    cursor: pointer;
 }
 .news-container .row .col-sm-8 span * {
     font-size: 14px !important;
@@ -971,6 +976,7 @@ input.submit{
 .news-container img{
     width: 100%;
     max-width: 300px;
+    cursor: pointer;
 }
 
 .news-container .date{
