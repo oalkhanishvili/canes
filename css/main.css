@@ -924,7 +924,7 @@ input.submit{
 .news-container .row .col-sm-8 span * {
     font-size: 14px !important;
     line-height: 22px !important;
-    font-family: Caps_dejavu;
+    font-family: dejavu;
 }
 
 .news-container .row>.col-sm-8{
