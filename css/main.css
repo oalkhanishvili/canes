@@ -356,10 +356,11 @@ a {
 
 .article{
     width: 100%;
-    height: -webkit-calc((82% - 120px) / 3);
-    height: -moz-calc((82% - 120px) / 3);
-    height: calc((82% - 120px) / 3);
+    height: -webkit-calc((82% - 69px) / 4);
+    height: -moz-calc((82% - 69px) / 4);
+    height: calc((82% - 69px) / 4);
     overflow: hidden;
+
 }
 
 .article img{
@@ -522,9 +523,9 @@ a {
 
 .jury-contigent img{
     width: 34%;
-    -webkit-border-radius: 50px;
-       -moz-border-radius: 50px;
-            border-radius: 50px;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
 }
 
 .jury-contigent .col-md-6 {
